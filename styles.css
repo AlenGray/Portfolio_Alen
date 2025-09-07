@@ -1,0 +1,194 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    color: #1f2937;
+    margin: 0;
+    padding: 0;
+    width: 297mm;
+    height: 210mm;
+}
+.container {
+    width: 275mm;
+    height: 400mm;
+    margin: 0 auto;
+    display: flex;
+    background: white;
+    border-radius: 1rem;
+}
+.sidebar {
+    width: 30%;
+    background: linear-gradient(180deg, #1e3a8a, #111827);
+    color: white;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.main-content {
+    width: 70%;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.header {
+    background: linear-gradient(90deg, #1e3a8a, #111827);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    position: relative;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    opacity: 0.1;
+}
+.photo {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.photo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: none;
+}
+.sidebar-section, .section {
+    padding: 0.5rem;
+    background: #f9fafb;
+    border-radius: 0.5rem;
+}
+.sidebar-section {
+    background: transparent;
+}
+.section h2, .sidebar-section h3 {
+    color: #1e40af;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.sidebar-section h3 {
+    color: #10b981;
+    font-size: 1rem;
+}
+.sidebar-section h3 i, .section h2 i {
+    color: #10b981;
+}
+.sidebar-section ul, .section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-section ul li, .section ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+}
+.sidebar-section ul li::before, .section ul li::before {
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: #10b981;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+.language-levels {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 0.4rem;
+}
+.level {
+    width: 20px;
+    height: 10px;
+    background: #6b7280;
+    border-radius: 25px;
+}
+.level.up {
+    background: #10b981;
+}
+.download-btn {
+    display: inline-block;
+    background: #10b981;
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+}
+.qr-code {
+    text-align: center;
+    margin-top: 10%;
+    padding: 1rem;
+    margin-bottom: -1.0rem;
+   
+}
+.qr-code img {
+    width: 50mm;
+    height: 50mm;
+}
+@media print {
+    body {
+        background: white;
+    }
+    .container {
+        margin: 0;
+        border-radius: 0;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+        border: none;
+    }
+    .sidebar {
+        background: #1e3a8a;
+    }
+    .header {
+        background: #1e3a8a;
+    }
+    .download-btn {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        flex-direction: column;
+        margin: 0.3rem;
+        width: 100%;
+        height: auto;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .header h1 {
+        font-size: 1.3rem;
+    }
+    .section h2, .sidebar-section h3 {
+        font-size: 0.9rem;
+    }
+    .photo img {
+        width: 100%;
+        max-width: 50mm;
+    }
+    .qr-code img {
+        width: 50mm;
+        height: 50mm;
+    }
+    .sidebar-section ul li, .section ul li {
+        font-size: 0.8rem;
+    }
+}
