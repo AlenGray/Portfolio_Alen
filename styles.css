@@ -137,6 +137,17 @@ body {
     width: 50mm;
     height: 50mm;
 }
+
+a {
+  color: inherit; /* Наследует цвет от родителя */
+  text-decoration: none; /* Убирает подчёркивание */
+}
+
+a:hover {
+  color: #10b981; /* Цвет при наведении — зелёный, как в твоей палитре */
+  text-decoration: underline;
+}
+
 @media print {
     body {
         background: white;
