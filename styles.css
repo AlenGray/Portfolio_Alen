@@ -120,24 +120,6 @@ body {
     margin-bottom: 0.75rem;
 }
 
-.bars {
-    display: flex;
-    gap: 0.28rem;
-    margin-top: 0.35rem;
-}
-
-.bars i {
-    width: 22px;
-    height: 8px;
-    border-radius: 99px;
-    background: rgba(255, 255, 255, 0.28);
-}
-
-.bars i:first-child,
-.bars.full i {
-    background: var(--emerald);
-}
-
 .lang-note {
     margin: 0.4rem 0 0;
     font-size: 0.8rem;
